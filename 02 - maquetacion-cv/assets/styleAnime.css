@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f6f6f9;
+    color: #1e1e1e;
+  }
+  
+  .anime-hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    gap: 3rem;
+    background-color: #ffffff;
+  }
+  
+  .anime-text {
+    max-width: 600px;
+  }
+  
+  .anime-text h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .highlight {
+    color: #ffbb00;
+  }
+  
+  .sub {
+    font-size: 1.25rem;
+    color: #444;
+  }
+  
+  .anime-image img {
+    max-width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  }
+  
+  .anime-gallery {
+    padding: 3rem 2rem;
+    background-color: #2e314f;
+    color: white;
+    text-align: center;
+  }
+  
+  .anime-gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .gallery-grid img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    height: 300px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-grid img:hover {
+    transform: scale(1.05);
+  }
+  
+  .ver-mas {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #f5f5f5;
+    color: #1e1e1e;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background 0.3s;
+  }
+  
+  .ver-mas:hover {
+    background-color: #ffffff;
+  }
+  
+  @media (max-width: 900px) {
+    .anime-hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .anime-text h1 {
+      font-size: 2.5rem;
+    }
+  
+    .anime-image img {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  .section-bocetos {
+    background-color: #fff;
+    padding: 4rem 2rem;
+    color: #1e1e1e;
+  }
+  
+  .bocetos-content {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+  
+  .section-bocetos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .section-bocetos h3 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .section-bocetos ul {
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .section-bocetos li {
+    margin-bottom: 0.8rem;
+  }
+  

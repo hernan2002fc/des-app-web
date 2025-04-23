@@ -3,64 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Trabajo Blender</title>
+  <title>Trabajo en Blender</title>
   <link rel="stylesheet" href="../assets/styleBlender.css" />
 </head>
 <body>
 
-    <nav>
-      Trabajo en Blender
-    </nav>
-  
-    <div class="container">
-      <!-- VIDEO -->
+  <main class="main-container">
+    <section class="media-section">
       <div class="video-box">
         <video src="../videos/video.mp4" controls></video>
       </div>
-  
-      <!-- CARRUSEL LIMPIO -->
-      <div class="carousel">
-        <button class="prev" id="btn-prev">&larr;</button>
-        <img id="carousel-img" src="../img/amongus.jpg" alt="Render" />
-        <button class="next" id="btn-next">&rarr;</button>
+
+      <div class="carousel-box">
+        <button class="arrow prev" id="btn-prev">←</button>
+        <img id="carousel-img" src="../img/amongus.jpg" alt="Render Blender" />
+        <button class="arrow next" id="btn-next">→</button>
       </div>
-    </div>
-  
-    <footer>
-      © 2025 - Portafolio de Proyectos
-    </footer>
-  
-    <script>
-      const images = [
-        "../img/amongus.jpg",
-        "../img/amongus2.jpg",
-        "../img/amongus3.jpg",
-        "../img/casa.jpg",
-        "../img/casa2.jpg",
-        "../img/casa3.jpg",
-        "../img/coca.jpg",
-        "../img/coca2.jpg",
-        "../img/coca3.jpg",
-        "../img/cuarto.jpg",
-        "../img/cuarto2.jpg",
-        "../img/switch.jpg",
-        "../img/switch2.jpg",
-        "../img/erick.jpg"
-      ];
-  
-      let index = 0;
-      const imgElement = document.getElementById("carousel-img");
-  
-      document.getElementById("btn-prev").addEventListener("click", () => {
-        index = (index - 1 + images.length) % images.length;
-        imgElement.src = images[index];
-      });
-  
-      document.getElementById("btn-next").addEventListener("click", () => {
-        index = (index + 1) % images.length;
-        imgElement.src = images[index];
-      });
-    </script>
-  
-  </body>
+    </section>
+  </main>
+
+  <footer class="footer-fixed">
+    © 2025 - Portafolio de Proyectos de Hernán Javier Flores Córdova
+  </footer>
+
+  <script>
+    const images = [
+      "../img/amongus.jpg",
+      "../img/amongus2.jpg",
+      "../img/amongus3.jpg",
+      "../img/casa.jpg",
+      "../img/casa2.jpg",
+      "../img/casa3.jpg",
+      "../img/coca.jpg",
+      "../img/coca2.jpg",
+      "../img/coca3.jpg",
+      "../img/cuarto.jpg",
+      "../img/cuarto2.jpg",
+      "../img/switch.jpg",
+      "../img/switch2.jpg",
+      "../img/erick.jpg"
+    ];
+
+    let index = 0;
+    const img = document.getElementById("carousel-img");
+
+    document.getElementById("btn-prev").addEventListener("click", () => {
+      index = (index - 1 + images.length) % images.length;
+      img.src = images[index];
+    });
+
+    document.getElementById("btn-next").addEventListener("click", () => {
+      index = (index + 1) % images.length;
+      img.src = images[index];
+    });
+  </script>
+
+</body>
 </html>
