@@ -72,3 +72,33 @@ body {
     padding: 2rem 0;
   }
   
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .skill {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skill img {
+    height: 250px;
+    width: auto;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill img:hover {
+    transform: scale(1.1);
+  }
+  
+  .skill span {
+    color: #fff;
+    font-weight: 500;
+  }
+  
