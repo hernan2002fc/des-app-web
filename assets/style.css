@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #353a57;
+    color: #fff;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    color: #000000;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+  }
+  
+  .hero h1 span {
+    color: #000000;
+  }
+  
+  .hero .btn {
+    padding: 0.8rem 1.5rem;
+    background: #ffffff;
+    color: #000;
+    font-weight: bold;
+    border-radius: 999px;
+    box-shadow: 0 5px 15px #c3c7c766;
+    text-decoration: none;
+  }
+  
+  .about {
+    display: flex;
+    background: #fff;
+    color: #333;
+    padding: 4rem;
+  }
+  
+  .about h2 {
+    border-bottom: 2px solid #000000;
+    display: inline-block;
+  }
+  
+  .portfolio {
+    background: #181c31;
+    padding: 4rem;
+    text-align: center;
+  }
+  
+  .card {
+    background: #202346;
+    color: #fff;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 8px;
+  }
+  
+  footer {
+    background: #ffffff;
+    color: #000;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
