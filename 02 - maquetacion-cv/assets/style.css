@@ -98,7 +98,10 @@ body {
   }
   
   .skill span {
-    color: #fff;
+    color: #000000;
     font-weight: 500;
+    border-bottom: 2px solid #000000;
+    display: inline-block;
+    font-weight: bold;
   }
   
