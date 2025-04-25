@@ -135,3 +135,17 @@ body {
     margin-bottom: 0.8rem;
   }
   
+  .footer-fixed {
+    background-color: white;
+    color: #2e314f;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+  }
+  
